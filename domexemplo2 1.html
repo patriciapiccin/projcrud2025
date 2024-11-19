@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Hieraquia do elemento div por JavaScript</title>
+
+<script type="text/JavaScript">
+
+  function listarAtributos(){
+    var elem = document.getElementById("conta");
+    var atributos = "";
+
+    for(var i = 0; i < elem.attributes.length; i++){
+      atributos += elem.attributes[i].nodeName + "<br>";
+    }
+
+    elem.innerHTML = atributos;
+  }
+
+</script>
+</head>
+<body>
+
+  <div id="conta" style="border: 1px solid red">
+  Aqui é um elemento DIV</div>
+
+  <button onclick="JavaScript:listarAtributos()">
+  Listar atributos da DIV</button>
+
+</body>
+</html>

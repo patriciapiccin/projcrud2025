@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<script>
+  function getElements()
+    {
+      //Recupera os elementos que encontram-se no documento
+      var x=document.getElementsByTagName("input");
+      alert("Resposta = "+x.length);
+
+    }
+</script>
+</head>
+<body>
+
+  <input type="text" size="20"><br>
+  <input type="text" size="20"><br>
+  <input type="text" size="20"><br><br>
+  <input type="button" onclick="getElements()"
+  value="Clique e veja quantos elementos inputs estão nessa página?">
+
+</body>
+</html>
